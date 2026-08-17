@@ -1,0 +1,92 @@
+$sql = "ALTER TABLE usuarios ADD COLUMN pass VARCHAR(50) NOT NULL AFTER email";
+
+$sql = "CREATE TABLE IF NOT EXISTS Turnos (
+    id_Turno INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    Nombre VARCHAR(50) NOT NULL,
+    Email VARCHAR(50) NOT NULL,
+    Cel VARCHAR(50) NOT NULL,
+    Dia VARCHAR(50) NOT NULL,
+    Horario VARCHAR(50) NOT NULL)";
+//Crear la tabla si no existe
+
+ALTER TABLE `Turnos` ADD `Dia` VARCHAR(50) NULL DEFAULT NULL AFTER `Horario`; //Agregar a tabla
+ALTER TABLE `Turnos` CHANGE `Horario` `Hora` VARCHAR(50) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL; /Modificar nombre
+$sql = "CREATE TABLE Datos (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    CUIT VARCHAR(12),
+    Nombre VARCHAR(100),
+    Rubro VARCHAR(100),
+    Clasificacion VARCHAR(100),
+    Categoria VARCHAR(100),
+    Sector VARCHAR(100),
+    Telefono VARCHAR(15),
+    TelSec VARCHAR(15),
+    TelTer VARCHAR(15),
+    Localidad VARCHAR(100),
+    Direccion VARCHAR(100),
+    Provincia VARCHAR(100),
+    CP VARCHAR(10),
+    Web VARCHAR(100),
+    Mail VARCHAR(100),
+    Mail2 VARCHAR(100),
+    Contacto VARCHAR(100),
+    Bonificacion INT(6),
+    Horario VARCHAR(100),
+    Observaciones VARCHAR(100)
+  );";
+$sql = "CREATE TABLE Ventas (
+    id_compra INT AUTO_INCREMENT,
+    fecha VARCHAR(255) NOT NULL,
+    tipo VARCHAR(255) NOT NULL,
+    factura VARCHAR(255) NOT NULL,
+    proveedor VARCHAR(255) NOT NULL,
+    cuit VARCHAR(255) NOT NULL,
+    IB DECIMAL(10, 2),
+    iva21 DECIMAL(10, 2),
+    iva105 DECIMAL(10, 2),
+    iva27 DECIMAL(10, 2),
+    total DECIMAL(10, 2),
+    PRIMARY KEY (id_compra)
+)";
+  $sql = "CREATE TABLE Compras (
+    id_compra INT AUTO_INCREMENT,
+    fecha VARCHAR(255) NOT NULL,
+    tipo VARCHAR(255) NOT NULL,
+    factura VARCHAR(255) NOT NULL,
+    proveedor VARCHAR(255) NOT NULL,
+    cuit VARCHAR(255) NOT NULL,
+    gasto DECIMAL(10, 2),
+    prima DECIMAL(10, 2),
+    serv DECIMAL(10, 2),
+    gral DECIMAL(10, 2),
+    fabri DECIMAL(10, 2),
+    IB DECIMAL(10, 2),
+    iva21 DECIMAL(10, 2),
+    iva105 DECIMAL(10, 2),
+    iva27 DECIMAL(10, 2),
+    total DECIMAL(10, 2),
+    PRIMARY KEY (id_compra)
+)";
+
+  $sql = "CREATE TABLE Stock (
+    id_Stock INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    Producto VARCHAR(100),
+    Cantidad INT,
+    Caracteristica VARCHAR(100),
+    Grupo VARCHAR(100),
+    Codigo VARCHAR(100))";
+//modificar estructura de tabla
+    ALTER TABLE `Stock` ADD `Fecha` DATE NOT NULL AFTER `Cantidad`;
+);if ($conn->query($sql) === false) {
+    echo "Error al crear la tabla: " . $conn->error;
+}
+CREATE TABLE IF NOT EXISTS usuarios (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    pass VARCHAR(50) NOT NULL)
+
+    // Consulta SQL para obtener los nombres de los campos
+$consulta = "SELECT COLUMN_NAME
+             FROM INFORMATION_SCHEMA.COLUMNS
+             WHERE TABLE_SCHEMA = '$dbname' AND TABLE_NAME = '$tabla'";

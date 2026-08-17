@@ -1,0 +1,138 @@
+═══════════════════════════════════════════════════════════════
+  AMET 220 — PLATAFORMA DE CURSADA VIRTUAL
+  Instituto Superior 220 · Técnico Superior en Programación
+═══════════════════════════════════════════════════════════════
+
+REQUISITOS DEL SERVIDOR
+──────────────────────
+- PHP 8.0 o superior
+- Extensión JSON habilitada (viene por defecto)
+- mod_rewrite habilitado en Apache
+- Permisos de escritura en la carpeta /data/ y /uploads/
+
+INSTALACIÓN POR FTP
+──────────────────
+1. Subir TODOS los archivos al servidor via FTP (estructura completa)
+2. Dar permisos 755 a las carpetas:
+   - /data/
+   - /data/tracking/
+   - /data/calificaciones/
+   - /data/calendario/
+   - /uploads/
+
+   En cPanel File Manager: click derecho → Permissions → 755
+   Por FTP/SSH: chmod -R 755 data/ uploads/
+
+3. Si el sistema está en una subcarpeta (ej: /virtual/):
+   Editar config.php línea 8:
+   define('BASE_URL', '/virtual');
+   
+   Y editar .htaccess, agregar al inicio:
+   RewriteBase /virtual/
+
+4. Acceder a: https://tu-dominio.com/
+   (o https://tu-dominio.com/virtual/ si está en subcarpeta)
+
+PRIMER ACCESO
+────────────
+Usuario administrador por defecto:
+  Usuario:    admin
+  Contraseña: admin123
+
+⚠ IMPORTANTE: Cambiar la contraseña del admin inmediatamente
+   después del primer login (por ahora hacerlo editando
+   data/usuarios.json con un nuevo hash generado en:
+   https://www.bcrypt-generator.com/ o via PHP)
+
+FLUJO DE ALTA
+────────────
+1. Admin ingresa → Dashboard muestra plan de estudios completo
+2. Docente va a /registro.php → se auto-registra
+3. Admin activa al docente desde Dashboard (aparece en "Pendientes")
+4. Admin va a Profesores → Asignar materias al docente
+5. Alumnos van a /registro.php → se auto-registran (activos de inmediato)
+6. Admin asigna año a cada alumno (Gestión de Alumnos)
+7. Docente crea actividades, calificaciones y calendarios
+8. Alumnos ingresan, ven actividades en horario y trabajan
+
+ESTRUCTURA DE ARCHIVOS
+─────────────────────
+amet220/
+├── index.php          ← Login
+├── registro.php       ← Autoregistro docentes/alumnos
+├── logout.php
+├── config.php         ← Configuración central
+├── .htaccess          ← Seguridad
+├── assets/
+│   ├── css/style.css  ← Estilos
+│   └── js/
+│       ├── tracker.js ← Motor de tracking
+│       └── editor.js  ← Editor de código anti-pegado
+├── includes/
+│   ├── header.php
+│   └── footer.php
+├── admin/
+│   ├── index.php      ← Dashboard admin
+│   ├── profesores.php ← Gestión de docentes
+│   ├── alumnos.php    ← Gestión de alumnos
+│   └── materias.php   ← Plan de estudios
+├── profesor/
+│   ├── index.php      ← Dashboard docente
+│   ├── actividades.php       ← CRUD actividades
+│   ├── calificaciones.php    ← Cargar notas
+│   ├── reportes.php          ← Reportes de tracking
+│   ├── reporte_actividad.php ← Detalle por actividad
+│   └── calendario.php        ← Calendario de materia
+├── alumno/
+│   ├── index.php         ← Dashboard alumno
+│   ├── actividades.php   ← Ver actividades disponibles
+│   ├── actividad.php     ← Ejecutar actividad + tracking
+│   ├── calificaciones.php← Ver calificaciones
+│   ├── progreso.php      ← Historial de interacciones
+│   └── calendario.php    ← Ver calendario
+├── api/
+│   ├── heartbeat.php    ← Recibe pings de tracking (cada 30s)
+│   └── guardar_sesion.php ← Guarda sesión al finalizar
+└── data/              ← Almacenamiento JSON (sin DB)
+    ├── usuarios.json
+    ├── materias.json   ← 22 materias del plan de estudios
+    ├── actividades.json
+    ├── tracking/       ← {uid}_{aid}.json por cada sesión
+    ├── calificaciones/ ← {materia_id}.json
+    └── calendario/     ← {materia_id}.json
+
+TIPOS DE ACTIVIDAD
+─────────────────
+• Lectura      → Material PDF/texto con tracking de permanencia
+• Cuestionario → Preguntas con respuesta libre
+• Video        → Video embebido con seguimiento
+• Consigna     → Entrega libre de texto
+• Código       → Editor CodeMirror con anti-pegado activo
+
+SISTEMA DE TRACKING
+──────────────────
+- Heartbeat automático cada 30 segundos al servidor
+- Idle detection: sin mouse/teclado por 60s = tiempo pausado
+- Cambio de tab: detectado y registrado automáticamente
+- Pantalla completa: se solicita al iniciar; salidas quedan registradas
+- Intentos de pegado: bloqueados y contabilizados (editor de código)
+- Todo queda en /data/tracking/{uid}_{aid}.json
+
+PLAN DE ESTUDIOS CARGADO
+────────────────────────
+1° Año: Análisis Matemático, Adm. y Gestión de BD,
+        Intro a la Programación, Intro a Redes, Sistemas Digitales,
+        Sistemas Operativos, Laboratorio de Hardware, PP I
+
+2° Año: Inglés, Álgebra y Lógica, Programación, Diseño Web,
+        Estadística y Prob., Des. Aplicaciones Móviles,
+        Des. Sistemas OO, PP II
+
+3° Año: Inglés III, Gestión de Proyectos, Desarrollo de Sistemas Web,
+        Ingeniería de Software, Metodología de Pruebas, PP III
+
+Total: 22 materias · 1824 horas
+
+═══════════════════════════════════════════════════════════════
+  Desarrollado para AMET 220 · Por FIDESDEV
+═══════════════════════════════════════════════════════════════

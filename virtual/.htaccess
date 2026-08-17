@@ -1,0 +1,33 @@
+# AMET 220 — Apache configuration
+
+# Protect data directory from direct web access
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^data/ - [F,L]
+</IfModule>
+
+# Default index
+DirectoryIndex index.php
+
+# Security headers
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set X-XSS-Protection "1; mode=block"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Block access to JSON data files directly
+<FilesMatch "\.json$">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
+
+# PHP settings
+<IfModule mod_php.c>
+  php_value session.cookie_httponly 1
+  php_value session.use_strict_mode 1
+</IfModule>
+
+# Disable directory listing
+Options -Indexes

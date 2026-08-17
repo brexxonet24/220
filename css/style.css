@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* NAVBAR */
+.navbar-color{
+    background-color:rgba(43, 34, 126, 1);
+}
+/* COLOR LINK NAVBAR */
+.btn-nav{
+    color: white;
+    padding: 7px 10px;
+    margin-right: 20px;
+    border-radius: 3.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 17px;
+}
+.btn-nav:hover{
+    color: white;
+    background-color: #572da1;
+    transition: .5s;
+}
+.color-brand{
+    color: white;
+    padding: 0px 40px;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.color-brand:hover{
+    color: white !important;
+    background-color:transparent;
+}
+/* BORDES DE BOTON HAMBURGUESA  */
+.navbar-light
+.navbar-toggler{
+    color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    background-color: #625c99;
+}
+
+/* AJUSTE SECCION */
+.centrar{
+    padding: 50px 50px;
+}
+/* SECCION NOSOTROS */
+.titulo-nosotros{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.text-justify{
+    text-align: justify;
+}
+.fondo-nosotros{
+    background-color: #DFDFDE;
+}
+/* SECCION CARRERAS */
+.card{
+    min-height: 430px;
+}
+.alineacion{
+    display: flex;
+}
+.alineacion2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    align-content: center;
+}
+.btn-carreras{
+    color: white;
+    font-size: 15px;
+    padding: 7px 10px;
+    margin-top: 20px;
+    background-color: #572da1;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.btn-deshabilitado{
+    color: grey;
+    pointer-events: none;
+}
+.btn-carreras:hover{
+    color: white;
+}
+/* UBICACION */
+.titulo-mapa{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* CONTACTO */
+.titulo-contacto{
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+.btn-contacto{
+    color: white;
+    font-size: 15px;
+    padding: 7px 50px;
+    background-color: #572da1;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.btn-contacto:hover{
+    color: white;
+}
+.color-github{
+    color: white;
+    text-decoration: none;
+}
+.color-github:hover{
+    color:#7940df;
+}
+
+/* SUB PAGINAS */
+.titulo-materias{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+table{
+    width: 100%;
+    max-width: 1200px;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 10px;
+}
+th, td{
+    text-align: center;
+}
+/* TABLA DE ALIMENTOS SEGUNDO AÑO */
+.orden2{
+    padding: 0;
+    margin: 0;
+}

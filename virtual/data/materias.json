@@ -1,0 +1,212 @@
+[
+    {
+        "id": 1,
+        "nombre": "Análisis Matemático",
+        "anio": 1,
+        "campo": "general",
+        "horas": 64,
+        "color": "blue",
+        "profesor_ids": []
+    },
+    {
+        "id": 2,
+        "nombre": "Administración y Gestión de Base de Datos",
+        "anio": 1,
+        "campo": "tecnico",
+        "horas": 96,
+        "color": "green",
+        "profesor_ids": []
+    },
+    {
+        "id": 3,
+        "nombre": "Introducción a la Programación",
+        "anio": 1,
+        "campo": "tecnico",
+        "horas": 64,
+        "color": "green",
+        "profesor_ids": []
+    },
+    {
+        "id": 4,
+        "nombre": "Introducción a las Redes de Datos",
+        "anio": 1,
+        "campo": "fundamento",
+        "horas": 64,
+        "color": "purple",
+        "profesor_ids": [
+            3
+        ]
+    },
+    {
+        "id": 5,
+        "nombre": "Sistemas Digitales",
+        "anio": 1,
+        "campo": "fundamento",
+        "horas": 64,
+        "color": "purple",
+        "profesor_ids": []
+    },
+    {
+        "id": 6,
+        "nombre": "Sistemas Operativos",
+        "anio": 1,
+        "campo": "fundamento",
+        "horas": 64,
+        "color": "purple",
+        "profesor_ids": []
+    },
+    {
+        "id": 7,
+        "nombre": "Laboratorio de Hardware",
+        "anio": 1,
+        "campo": "fundamento",
+        "horas": 64,
+        "color": "purple",
+        "profesor_ids": [
+            3
+        ]
+    },
+    {
+        "id": 8,
+        "nombre": "Prácticas Profesionalizantes I",
+        "anio": 1,
+        "campo": "practica",
+        "horas": 64,
+        "color": "coral",
+        "profesor_ids": [
+            3
+        ]
+    },
+    {
+        "id": 9,
+        "nombre": "Inglés",
+        "anio": 2,
+        "campo": "general",
+        "horas": 64,
+        "color": "blue",
+        "profesor_ids": []
+    },
+    {
+        "id": 10,
+        "nombre": "Álgebra y Lógica",
+        "anio": 2,
+        "campo": "fundamento",
+        "horas": 96,
+        "color": "purple",
+        "profesor_ids": []
+    },
+    {
+        "id": 11,
+        "nombre": "Programación",
+        "anio": 2,
+        "campo": "fundamento",
+        "horas": 64,
+        "color": "purple",
+        "profesor_ids": [
+            2
+        ]
+    },
+    {
+        "id": 12,
+        "nombre": "Diseño Web",
+        "anio": 2,
+        "campo": "fundamento",
+        "horas": 64,
+        "color": "purple",
+        "profesor_ids": []
+    },
+    {
+        "id": 13,
+        "nombre": "Estadística y Probabilidades",
+        "anio": 2,
+        "campo": "fundamento",
+        "horas": 64,
+        "color": "purple",
+        "profesor_ids": []
+    },
+    {
+        "id": 14,
+        "nombre": "Desarrollo de Aplicaciones Móviles",
+        "anio": 2,
+        "campo": "tecnico",
+        "horas": 128,
+        "color": "green",
+        "profesor_ids": []
+    },
+    {
+        "id": 15,
+        "nombre": "Desarrollo de Sistemas Orientado a Objetos",
+        "anio": 2,
+        "campo": "tecnico",
+        "horas": 128,
+        "color": "green",
+        "profesor_ids": [
+            2
+        ]
+    },
+    {
+        "id": 16,
+        "nombre": "Prácticas Profesionalizantes II",
+        "anio": 2,
+        "campo": "practica",
+        "horas": 96,
+        "color": "coral",
+        "profesor_ids": [
+            2
+        ]
+    },
+    {
+        "id": 17,
+        "nombre": "Inglés III",
+        "anio": 3,
+        "campo": "general",
+        "horas": 64,
+        "color": "blue",
+        "profesor_ids": []
+    },
+    {
+        "id": 18,
+        "nombre": "Gestión de Proyectos",
+        "anio": 3,
+        "campo": "tecnico",
+        "horas": 64,
+        "color": "green",
+        "profesor_ids": []
+    },
+    {
+        "id": 19,
+        "nombre": "Desarrollo de Sistemas Web",
+        "anio": 3,
+        "campo": "tecnico",
+        "horas": 128,
+        "color": "green",
+        "profesor_ids": []
+    },
+    {
+        "id": 20,
+        "nombre": "Ingeniería de Software",
+        "anio": 3,
+        "campo": "tecnico",
+        "horas": 64,
+        "color": "green",
+        "profesor_ids": []
+    },
+    {
+        "id": 21,
+        "nombre": "Metodología de Pruebas de Software",
+        "anio": 3,
+        "campo": "tecnico",
+        "horas": 64,
+        "color": "green",
+        "profesor_ids": []
+    },
+    {
+        "id": 22,
+        "nombre": "Prácticas Profesionalizantes III",
+        "anio": 3,
+        "campo": "practica",
+        "horas": 128,
+        "color": "coral",
+        "profesor_ids": []
+    }
+]

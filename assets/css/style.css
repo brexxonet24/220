@@ -1,0 +1,318 @@
+:root {
+
+  --purple: purple;
+  --gradiente-inferior: linear-gradient(to bottom, purple, indigo);
+   --gradiente-derecho:	linear-gradient(to right, indigo, purple);
+   --color: indigo;
+
+}
+body {
+	font-family: 'Lato', sans-serif !important;
+}
+
+/* CUSTOMIZE NAVBAR  */
+.navbar {
+	transition: all 0.5s;
+}
+.navbar-scrolled  {
+	background-image: var(--gradiente-derecho);
+	box-shadow: 0 3px 10px rgba(110, 0, 128, 0.5);
+}
+
+.nav-link {
+	position: relative;
+}
+
+
+
+.nav-link::after {
+	content: '';
+	opacity: 0;
+	transition: all 0.2s;
+	height: 2px;
+	width: 100%;
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.nav-link:hover:after {
+	
+	opacity: 1;
+	
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.dropdown-menu {
+	background-image: linear-gradient(to bottom, purple, indigo);
+	border-radius: 0px;
+}
+
+
+/* Bottons */
+
+.btn-outline-info {
+  border-color: var(--purple);
+  color: var(--purple);
+}
+
+.btn-outline-info:hover {
+	border-color: var(--purple) !important;
+	background-color: var(--purple) !important;
+	color: white !important;
+}
+
+.btn-outline-info:focus {
+	border-color: var(--purple) !important;
+	background-color: var(--purple) !important;
+	color: white !important;
+}
+
+/* Botton Pre Inscripcion */
+.btn-pre-i	{
+	border-color: var(--purple) !important;
+	background-color: var(--purple) !important;
+	color: white !important;
+}
+
+
+
+/* Size Image Carrousel */
+	.carousel-item img {
+	height: 762px;
+} 
+	.carousel-item .content-carousel {
+	border-radius: 2px;
+	background-color: purple;
+	opacity: .7;
+	filter: brightness(80%);
+	}
+
+
+/* Gallery  */
+.gallery {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	box-shadow: 1px 1px 15px 1px rgba(110.27, 0, 128, 0.5);
+}
+
+.gallery a i {
+	color: var(--purple);
+}
+
+.gallery a i:hover {
+	color: white;
+}
+
+/* Cards  */
+.card {
+	transition: all 0.3s;
+}
+
+.card:hover {
+	transform: scale(1.10);
+}
+
+.card {
+	box-shadow: 1px 1px 15px 1px rgba(110.27, 0, 128, 0.5);
+}
+
+.card-footer {
+	background-color: transparent;
+}
+
+
+/* Form */
+
+form {
+	box-shadow: 1px 1px 15px 1px rgba(110.27, 0, 128, 0.5);
+}
+
+.form-control:focus {
+  border-color: var(--purple); 
+  box-shadow: 0 0 5px rgba(110.27, 0, 128, 0.5);
+  outline: none; 
+}
+
+.btn-form {
+	border-color: var(--purple);
+	background-color: var(--purple);
+	color: white;
+}
+
+.btn-form:hover {
+	background-color: transparent !important;
+	border-color: var(--purple) !important;
+	color: var(--purple) !important;
+}
+
+.btn-form:focus {
+	border-color: var(--purple) !important;
+	background-color: var(--purple) !important;
+	color: white !important;
+}
+
+/* Maps */
+iframe {
+	filter: brightness(50%);
+}
+
+/* Footer  */
+
+footer {
+	background-image: var(--gradiente-inferior);
+	box-shadow: 0 5px 10px rgba(110.27, 0, 128, 0.5);
+  border-radius: 0px;
+
+}
+
+footer .btn-primary {
+	background-color: transparent;
+	border-color: white;
+	color: white;
+	}
+
+footer .btn-primary:hover {
+	background-color: var(--purple) !important;
+	border-color: white !important;
+	color: white !important;
+}
+
+footer .btn-primary:focus {
+	background-color: transparent !important;
+	border-color: white !important;
+	color: white !important;
+	}
+
+/* Icons */
+
+
+.fa-brands {
+	color: white;
+}
+
+.fa-solid {
+	color: var(--purple);
+}
+
+
+/* PAGE GRACIAS | NAVBAR COLOR */
+#bg-nav-fixed {
+	background-image: var(--gradiente-derecho);
+	box-shadow: 0 3px 10px rgba(110, 0, 128, 0.5);
+}
+
+.tarjeta {
+	box-shadow: 1px 1px 15px 1px rgba(110.27, 0, 128, 0.5);
+	margin-top: 100px;
+	margin-bottom: 300px;
+}
+
+.tarjeta a:hover,
+.tarjeta a i:hover {
+	color: white;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 600px) {
+
+/* Carrousel */	
+	.carousel-item img {
+	height: auto;
+	}
+/* Section About */
+  .about-img { 
+  	width: 100vw;
+  }
+ 	.about-text {
+ 		text-align: center;
+ }
+ /* Section carrer */
+ 	.card {	
+ 		text-align: center;
+ 		width: 90vw;
+ 		margin: auto;
+ 		transform: scale(1.02);
+ 	}
+ 	.card-footer a {
+ 		margin-top: 5px;
+ 		margin-bottom: 5px;
+ 		display: block;
+ 	}
+
+/*Section Gallery */
+	.gallery p {
+		text-align: center;
+	}
+/* Section ubi */
+ 	#location img { 
+ 		height: 120px;
+ 		width: 120px;
+ 	}
+ /* Section contact */
+ 	#contacto {
+ 		text-align: center;
+ 	}
+ 	#contacto p {
+ 		margin-bottom: 30px;
+ 	}
+ 	#contacto form {
+ 		margin-top: 50px;
+ 	}
+
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+/* Carrousel */	
+	.carousel-item img {
+	height: auto;
+	}
+  .card {	
+  	text-align: center;
+ 		display: flex;
+ 		justify-content: center;
+ 		width: 100 vw;
+ 		margin: auto;
+ 	}
+ 	.card-footer a {
+ 		margin-top: 5px;
+ 		margin-bottom: 5px;
+ 	}
+
+ 	#location img { 
+ 		height: 120px;
+ 		width: 120px;
+ 	}
+
+ 		#contacto {
+ 		text-align: center;
+ 	}
+ 		#contacto p {
+ 		margin-bottom: 30px;
+ 	}
+ 		#contacto form {
+ 		margin-top: 50px;
+ 	}
+ 	i {
+ 		font-size: 20px;
+ 	}
+
+
+}
+
+
+
+
+
+

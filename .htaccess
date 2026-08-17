@@ -1,0 +1,14 @@
+RewriteEngine On
+
+# 1. Quitar cualquier forzado de HTTPS en local
+# RewriteCond %{HTTPS} !=on
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteBase /pagina220/
+
+# 2. Si piden archivos o carpetas reales (CSS, JS, imágenes), cargarlos normalmente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# 3. Reescribir la ruta quitando la subcarpeta local para que el router.php reciba '/'
+RewriteRule ^(.*)$ index.php [L]

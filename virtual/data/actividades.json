@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "profesor_id": 3,
+        "materia_id": 8,
+        "titulo": "INDEX HTML",
+        "tipo": "codigo",
+        "descripcion": "jercicio Práctico: Mi Primera Página Web con HTML\r\n\r\nObjetivo: Crear el archivo principal de un sitio web (index.html) utilizando la estructura básica de HTML5 y las etiquetas de contenido más comunes.\r\n\r\nInstrucciones:\r\n\r\n    Crea el archivo: En tu computadora, crea una nueva carpeta para tu proyecto. Dentro de ella, crea un archivo nuevo y nómbralo exactamente index.html.\r\n\r\n    Estructura básica: Escribe el esqueleto fundamental de un documento HTML5. Asegúrate de incluir la declaración <!DOCTYPE html> y las etiquetas principales: <html>, <head> y <body>.\r\n\r\n    Título de la pestaña: Dentro de la etiqueta <head>, usa la etiqueta <title> para definir el texto que aparecerá en la pestaña del navegador (por ejemplo: Mi Primer Sitio Web).\r\n\r\n    Encabezado principal: Dentro de la etiqueta <body>, agrega un título grande utilizando la etiqueta <h1> que dé la bienvenida a los visitantes. Por ejemplo: \"¡Hola! Bienvenido al sitio web de Nacho\".\r\n\r\n    Párrafo descriptivo: Debajo del título, utiliza la etiqueta <p> para escribir un breve texto de presentación o describir el propósito de la página.\r\n\r\n    Lista de intereses: Para practicar la jerarquía de la información, agrega un subtítulo con la etiqueta <h2> que diga \"Cosas que me interesan\" y debajo crea una lista desordenada (usando <ul> y <li>) con tres ítems breves.",
+        "hora_inicio": "10:00",
+        "hora_fin": "12:00",
+        "minimo_minutos": 120,
+        "fecha_desde": "2026-03-27",
+        "fecha_hasta": "2026-04-26",
+        "codigo_template": "",
+        "codigo_lenguaje": "htmlmixed",
+        "visible": true,
+        "created_at": "2026-03-27 11:02:11"
+    }
+]

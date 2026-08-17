@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo de Software</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preload" href="../css/style.css" as="style">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light navbar-color">
+        <div class="container-fluid">
+        <a class="color-brand" href="#">isft n°220</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item">
+                <a class="btn-nav" href="#perfil">Perfil del Egresado</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn-nav" href="#materias">Materias</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn-nav" href="#contacto">Contacto</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- FIN NAVBAR -->
+    <!-- CARRUSEL -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/hero-software.webp" class="d-block w-100" alt="Banner Institucional - ISFT N°220">
+            </div>
+            <div class="carousel-item">
+                <img src="../img/hero1.webp" class="d-block w-100"  alt="Banner Institucional - ISFT N°220">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- FIN CARRUSEL -->
+    <main>
+        <!-- PERFIL DEL EGRESADO -->
+        <section id="perfil" class="container-fluid row align-items-center min-vh-100">
+            <div class="col-12 centrar">
+                <h1 class="titulo-nosotros">Perfil del Egresado</h1>
+                <p class="text-justify">El Técnico Superior en Desarrollo de Software estará capacitado para producir artefactos de software, lo que comprende su diseño detallado, construcción -reutilizando elementos existentes o programándolos enteramente- y verificación unitaria, así como su depuración, optimización y mantenimiento; desarrollando las actividades descriptas en el perfil profesional y cumpliendo con los criterios de realización establecidos para las mismas en el marco de un equipo de trabajo organizado por proyecto. El proceso de desarrollo de software es una tarea grupal, o también individual y muchas veces multidisciplinaria que se organiza por proyectos. Cada proyecto es negociado y acordado con el cliente o usuario y llevado a cabo por un equipo de trabajo constituido “ad-hoc”, conducido y administrado por un líder que mantiene la relación diaria con el cliente o usuario y asume la responsabilidad operativa del proyecto.</p>
+                <a href="../doc/software.pdf" class="btn-carreras" target="_blank">Ver Plan de Estudios</a>
+            </div>
+        </section>
+        <!-- FIN PERFIL DEL EGRESADO -->
+        <!-- MATERIAS -->
+        <section id="materias" class="container-fluid row align-items-center min-vh-100">
+                <div class="col-12 table-responsive">
+                    <!-- PRIMER AÑO -->
+                    <h3 class="titulo-materias">Primer Año</h3>
+                    <table class="">
+                        <thead>
+                            <tr>
+                                <th>Campo General</th>
+                                <th colspan="2">Campo Técnico Especifico</th>
+                                <th colspan="4">Campo del Fundamento</th>
+                                <th>Campo de la Práctica</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th colspan="8">TOTAL HORAS: 576 Hs.</th>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td>Análisis Matematico</td>
+                                <td>Administración y Gestión de Base de Datos</td>
+                                <td>Introducción a la Programación</td>
+                                <td>Introducción a las Redes de Datos</td>
+                                <td>Sistemas Digitales</td>
+                                <td>Sistemas Operativos</td>
+                                <td>Laboratorio de Hardware</td>
+                                <td>Prácticas Profesionalizantes I</td>
+                            </tr>
+                            <tr>
+                                <td>64 Hs.</td>
+                                <td>96 Hs.</td>
+                                <td>96 Hs.</td>
+                                <td>64 Hs.</td>
+                                <td>64 Hs.</td>
+                                <td>64 Hs.</td>
+                                <td>64 Hs.</td>
+                                <td>64 Hs.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- FIN PRIMER AÑO -->
+                    <!-- SEGUNDO AÑO -->
+                    <h3 class="titulo-materias mt-4">Segundo año</h3>
+                    <table class="">
+                        <thead>
+                            <tr>
+                                <th colspan="3">Campo General</th>
+                                <th colspan="3">Campo del Fundamento</th>
+                                <th>Campo Técnico Especifico</th>
+                                <th>Campo de la Práctica</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th colspan="8">TOTAL HORAS: 672 Hs.</th>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td>Inglés I</td>
+                                <td>Desarrollo de Aplicativos Móviles</td>
+                                <td>Algebra y Lógica</td>
+                                <td>Programación</td>
+                                <td>Diseño Web</td>
+                                <td>Estadística y Probabilidades</td>
+                                <td>Desarrollo de Sistemas Orientados a Objetos</td>
+                                <td>Prácticas Profesionalizantes II</td>
+                            </tr>
+                            <tr>
+                                <td>64 Hs.</td>
+                                <td>96 Hs.</td>
+                                <td>64 Hs.</td>
+                                <td>96 Hs.</td>
+                                <td>64 Hs.</td>
+                                <td>64 Hs.</td>
+                                <td>128 Hs.</td>
+                                <td>96 Hs.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- FIN SEGUNDO AÑO -->
+                    <!-- TERCER AÑO -->
+                    <h3 class="titulo-materias mt-4">Tercer Año</h3>
+                    <table class="">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Campo General</th>
+                                <th colspan="3">Campo Técnico Especifico</th>
+                                <th>Campo de la Práctica</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th colspan="8">TOTAL HORAS: 576 Hs.</th>
+                            </tr>
+                            <tr>
+                                <th colspan="8">TOTAL DE HORAS DEL PLAN: 1824 Hs.</th>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td>Inglés II</td>
+                                <td>Gestión de Proyectos</td>
+                                <td>Desarrollo de Sistemas Web</td>
+                                <td>Ingeniería de Software</td>
+                                <td>Metodología de Pruebas de Sistemas</td>
+                                <td>Prácticas Profesionalizantes III</td>
+                            </tr>
+                            <tr>
+                                <td>64 Hs.</td>
+                                <td>64 Hs.</td>
+                                <td>128 Hs.</td>
+                                <td>128 Hs.</td>
+                                <td>64 Hs.</td>
+                                <td>128 Hs.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- FIN TERCER AÑO -->
+                </div>
+        </section>
+        <!-- FIN MATERIAS -->
+        <!--CONTACTO -->
+        <section class="container-fluid pt-5">
+            <form id="contacto" action="https://formsubmit.co/institutosuperior220@gmail.com" method="POST" class="row g-3 centrar">
+              <input type="hidden" name="_subject" value="¡Mensaje Nuevo de la Pagina de Desarrollo!">
+              <h3 class="text-center titulo-contacto">Para más información dejanos un mensaje</h3>
+              <hr>
+              <div class="col-md-6">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control" required pattern="[a-zA-Z]+" title="Ingresa solamente letras en minúsculas o mayúsculas">
+              </div>
+              <div class="col-md-6">
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="form-control" required pattern="[a-zA-Z]+" title="Ingresa solamente letras en minúsculas o mayúsculas">
+              </div>
+              <div class="col-12">
+                <input type="email" name="mail" id="mail" placeholder="Tu Mail" class="form-control" required>
+              </div>
+              <input type="hidden" name="_next" value="http://isft220.edu.ar/pages/gracias.html">
+              <div>
+                <textarea class="form-control" name="mensaje" id="mensaje" style="height: 100px" placeholder="Tu Mensaje" required></textarea>
+              </div>
+              <input type="hidden" name="_template" value="box">
+              <div class="col-12">
+                <button type="submit" class="btn btn-contacto">Enviar</button>
+              </div>
+              <div><p>O dejanos un mensaje directamente en nuestro <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=institutosuperior220@gmail.com" target="_blank">Correo Institucional.</a></p></div>
+            </form>
+        </section>
+        <!-- FIN DE CONTACTO -->
+    </main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

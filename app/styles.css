@@ -1,0 +1,38 @@
+header {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wide-image {
+    background-image: url("img/wide-image.jpg");
+    background-size: cover;
+    height: 0;
+    padding-bottom: 10%; /* Proporción de altura deseada (ej. 25% para cuarto de página) */
+}
+/* Estilos para el botón flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 10%;
+}
+
+.whatsapp-float img {
+    width: 50%;
+}
+.dropdown:hover .dropdown-menu { /*Genera menus desplegables*/
+    display: block;
+}
+.pagina-flotante {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

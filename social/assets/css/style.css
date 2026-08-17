@@ -1,0 +1,40 @@
+:root {
+    --color-principal: purple;
+    --color-secundario: indigo;
+    --gradient-color-ps: linear-gradient(to right, var(--color-secundario), var(--color-principal));
+  
+  }
+
+  body {
+      font-family: 'Lato', sans-serif;
+  }
+  
+/* Button */
+  .btn-outline-info {
+    border-color: var(--color-principal);
+    color: var(--color-principal);
+  }
+  
+  .btn-outline-info:hover {
+      border-color: var(--color-principal);
+      background-color: var(--color-principal);
+      color: white;
+  }
+  
+  .btn-outline-info:focus {
+      border-color: var(--color-principal) !important;
+      background-color: var(--color-principal) !important;
+      color: white !important;
+  }
+
+  .btn-outline-info:active {
+    border-color: var(--color-principal) !important;
+    background-color: var(--color-principal) !important;
+    color: white !important;
+}
+  
+  /* NAVBAR COLOR */
+  #bg-nav-fixed {
+      background-image: var(--gradient-color-ps);
+      box-shadow: 0 3px 10px rgba(110, 0, 128, 0.5);
+  }
