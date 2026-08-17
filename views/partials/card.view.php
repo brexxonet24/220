@@ -64,10 +64,10 @@
       <div class="card-body">
 
         <h5 class="card-title fw-bold">
-          Tecnicatura Superior en Higiene y Seguridadx
+          Tecnicatura Superior en Higiene, Seguridad y Ambiente Laboral.
         </h5>
         <p class="card-text">
-          El Técnico en Higiene y Seguridad organiza, gestiona y controla la seguridad en el trabajo, planificando y organizando un plan.
+          El Técnico en Higiene, Seguridad y Ambiente Laboral organiza, gestiona y controla la seguridad en el trabajo, planificando y organizando un plan.
         </p>
 
       </div>
