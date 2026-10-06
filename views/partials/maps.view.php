@@ -32,3 +32,13 @@
       <iframe class="google-map w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.551656651717!2d-58.539386785275106!3d-34.539585361613604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0b47f5ad31d%3A0x35caf55ae871675c!2sVirrey%20Loreto%202564%2C%20B1606DQH%20Munro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1628743293452!5m2!1ses!2sar" width="90%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
 </section>
+<!-- Sección de Instagram -->
+<section id="instagram" class="container-fluid py-5 text-center">
+  <div class="container">
+    <h2 class="titulo-mapa mb-4">Seguinos en Instagram</h2>
+    
+    <!-- Widget de Behold -->
+    <figure data-behold-id="VsAk0ee3W2Px9x5nYV65"></figure>
+    <script src="https://w.behold.so/widget.js" type="module"></script>
+  </div>
+</section>

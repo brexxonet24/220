@@ -1,3 +1,4 @@
+
 <?php include 'views/partials/header.view.php'; ?>
 
 <?php include 'views/partials/navbar.view.php'; ?>
