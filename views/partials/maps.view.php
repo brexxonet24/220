@@ -2,6 +2,9 @@
 
 	<div class="px-4 py-5 my-5 text-center">
 
+    <a href="https://estasestoy.gba.gob.ar/index.php">
+      <img class="d-block mx-auto mb-4 img-fluid" src="assets/images/EE_Logo Estas Estoy.png" alt="Estas Estoy" style="width: 400px; max-width: 100%; height: auto;">
+    </a>
     <img class="d-block mx-auto mb-4" src="assets/images/logo.png" alt="Logo ISFT 220" width="72" height="57">
 
     <h1 class="display-5 fw-bold">
